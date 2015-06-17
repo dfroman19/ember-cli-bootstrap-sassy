@@ -46,7 +46,7 @@ module.exports = {
       configMessage.push('glyphicons disabled');
     }
 
-    if(o.quiet !== true) {
+    if(o.quiet === false) {
       console.log('bootstrap-sassy config: ', configMessage.join(', '));
     }
   },
