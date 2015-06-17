@@ -8,7 +8,10 @@ module.exports = {
 	},
 
 	afterInstall: function(options) {
-	  this.addAddonToProject('ember-cli-sass');
+	  this.addAddonToProject({
+	    name: 'ember-cli-sass',
+	    extraArgs = ['--save-dev']
+	  });
 		return this.addBowerPackageToProject('bootstrap-sass');
 	}
 };
